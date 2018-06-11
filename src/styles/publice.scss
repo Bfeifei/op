@@ -1,0 +1,92 @@
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.publice {
+//  width: 100%;
+  display: flex;
+//overflow: hidden;
+  background-color: #1A191F;
+  
+}
+
+/* 内容区域样式*/
+.container {
+    width: calc(100% - 200px);
+    min-height: 100vh;
+    background: #f1f2f7;
+    flex: 1 auto;
+    .article-sec{
+        background-color: #FFF;
+        width:calc(100% - 60px);
+        min-height: calc(100% - 100px);
+        overflow:hidden;
+        margin: 20px 30px 20px 30px;
+    }
+    .breadcrumb-container {
+        .title {
+            width: 200px;
+            float: left;
+            color: #475669;
+        }
+        .breadcrumb-inner {
+            float: right;
+        }
+    }
+    .content-wrapper {
+        box-sizing: border-box;
+    }
+}
+
+/* 公共样式*/
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+[v-cloak] {
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: #C0CCDA;
+}
+.router-link-active {
+  color: #20a0ff;
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  animation: animate-in .6s;
+}
+.slide-fade-leave-active {
+  animation: animate-out .6s;
+}
+@keyframes animate-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes animate-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

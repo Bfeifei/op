@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Content-Disposition" content="attachment;">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+		<form>
+			<div>
+				<input type="file" id="Fileupload"/>
+			</div>
+			<div>
+				<input type="button" value="提交" id="Success"/>
+			</div>
+		</form>
+		<script>
+			$('#Fileupload').change(function(e){
+				File = e.target.files[0]
+				console.log(File)
+				
+					$('#Success').click(function(){
+					let formData = new FormData();
+		            formData.append('videoName', File);
+		            $.ajax({
+		            	type: "POST",
+		      			url: "http://video.security00.com/upload.php",
+		      			async: false,
+	      			 	mimeType:"multipart/form-data",
+		      			data: formData,
+		      			dataType:'json',
+		      			processData:false,
+		      			contentType:false
+		            });
+				})
+			})
+			
+		</script>
+	</body>
+</html>

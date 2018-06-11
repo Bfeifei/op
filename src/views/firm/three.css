@@ -1,0 +1,44 @@
+.el-three {
+
+}
+.hd-tree {
+	height: 700px;
+	
+	width: 500px;
+	overflow-y:auto;
+	overflow-x:hidden ;
+	background: red;
+	
+}
+
+.el-tree-node__content {
+	line-height: 46px;
+	height: 46px;
+	cursor: pointer;
+	font-size: 15px;
+	border-bottom: 1px solid #cccccc;
+}
+
+.el-tree-node__expand-icon {
+	width: 16px;
+	height: 16px;
+	margin: 15px 5px;
+	margin-left: 20px;
+	line-height: 35.99px;
+	border: none;
+	background: url(../../assets/img/lo.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.el-tree-node__expand-icon.expanded {
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.el-tree {
+	font-size: 24px;
+	cursor: default;
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 500px;
+}

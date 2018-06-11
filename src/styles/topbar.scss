@@ -1,0 +1,113 @@
+
+// 顶栏样式
+.top-bar {
+  height: 60px;
+  background-color: #FFF;
+  .top-wrapper {
+    flex: 1;
+    margin-right: 64px;
+  }
+  .search-area {
+    padding: 16px 10px;
+    height: 100%;
+    max-width: 320px;
+        text-align:right;
+        margin-right: 30px;
+            a{
+            font-family: PingFangSC;
+            text-align: left;
+            }
+    .el-form-item {
+      margin: 0;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.3);
+      .el-icon-search {
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        position: absolute;
+        z-index: 1;
+        width: 32px;
+        line-height: 32px;
+        border-radius: 16px;
+        text-align: center;
+        background-color: #20202A;
+      }
+    }
+  }
+  .user-area {
+    padding:0 !important;
+    display: inline-block;
+    position: relative;
+    &:hover {
+      background-color: #FFF;
+      .drop-menu {
+        display: block;
+      }
+    }
+    .userinfo-inner {
+            height:60px;
+                cursor: pointer;
+                font-size: 18px;
+                text-align: left;
+                line-height:60px;
+                color: #222820;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 20px;
+                    margin: 10px 10px 10px 10px;
+                    float: left;
+                }
+            }
+    .user-avatar {
+      height: 32px;
+      .avatar-img {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        margin-right: 10px;
+        vertical-align: middle;
+        background: center no-repeat;
+        background-size: cover;
+        background-color: #D8D8D8;
+      }
+      .el-icon-arrow-down {
+        vertical-align: middle;
+        font-size: 12px;
+        color: #C0CCDA;
+      }
+    }
+  }
+  .drop-menu {
+    position: absolute;
+    right: 0;
+    top: 64px;
+    display: none;
+    width: 140px;
+    z-index: 1;
+    background-color: #20202A;
+    box-shadow: 0 5px 20px rgba(0,0,0,.3);
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      padding: 12px 20px;
+      cursor: pointer;
+      line-height: 1;
+      font-size: 14px;
+      &:hover {
+        background-color: #2b3035;
+      }
+    }
+    .iconfont {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+}

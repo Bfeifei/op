@@ -1,0 +1,45 @@
+#app{
+  margin: 0 !important;
+}
+.t-title{
+  text-align: left;
+}
+.t-time{
+  text-align: left;
+  padding: 0 25px;
+}
+.inline{
+  display: inline;
+  padding-left: 100px;
+}
+.pad{
+padding: 20px 25px 70px;
+}
+.tprimary{
+  color: #fff !important;
+  background-color: #20a0ff !important;
+  border-color: #20a0ff !important;
+}
+.navUserTop{
+  margin: 0;
+  height: 60px;
+  line-height: 60px;
+  padding-right: 25px;
+}
+.navUserTop li {
+  float: left;
+  padding-left: 10px;
+}
+.navUserTop li a{
+  color:#fff;
+}
+.userEmail{
+  position: relative;
+  margin-right: 10px;
+}
+.userEmail b{
+  position: relative;
+  color: red;
+  top: -10px;
+  right: -28px;
+}
